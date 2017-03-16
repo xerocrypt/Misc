@@ -1,6 +1,6 @@
     <script>
         $.ajax({
-            url: "/api/prWRRSMessagesProcessedByDay_Result/",
+            url: "/api/prMessagesProcessedByDay_Result/",
             method: "GET",
             success: function (data) {
                 console.log(data);
@@ -16,7 +16,7 @@
                     labels: myDate,
                     datasets: [
                         {
-                            label: 'Messages by Health Board',
+                            label: 'Messages by Department,
                             backgroundColor: [
                             '#9900ff',
                             '#333333',
