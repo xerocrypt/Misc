@@ -1,0 +1,9 @@
+c:\users\mi168661\documents\visual studio 2013\Projects\Simple-REST-Example\Simple-REST-Example\bin\Debug\Simple-REST-Example.exe.config
+c:\users\mi168661\documents\visual studio 2013\Projects\Simple-REST-Example\Simple-REST-Example\bin\Debug\Simple-REST-Example.exe
+c:\users\mi168661\documents\visual studio 2013\Projects\Simple-REST-Example\Simple-REST-Example\bin\Debug\Simple-REST-Example.pdb
+c:\users\mi168661\documents\visual studio 2013\Projects\Simple-REST-Example\Simple-REST-Example\obj\Debug\Simple-REST-Example.csprojResolveAssemblyReference.cache
+c:\users\mi168661\documents\visual studio 2013\Projects\Simple-REST-Example\Simple-REST-Example\obj\Debug\Simple_REST_Example.restMaihnForm.resources
+c:\users\mi168661\documents\visual studio 2013\Projects\Simple-REST-Example\Simple-REST-Example\obj\Debug\Simple_REST_Example.Properties.Resources.resources
+c:\users\mi168661\documents\visual studio 2013\Projects\Simple-REST-Example\Simple-REST-Example\obj\Debug\Simple-REST-Example.csproj.GenerateResource.Cache
+c:\users\mi168661\documents\visual studio 2013\Projects\Simple-REST-Example\Simple-REST-Example\obj\Debug\Simple-REST-Example.exe
+c:\users\mi168661\documents\visual studio 2013\Projects\Simple-REST-Example\Simple-REST-Example\obj\Debug\Simple-REST-Example.pdb
