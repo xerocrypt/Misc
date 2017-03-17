@@ -1,0 +1,4 @@
+====== README ======
+
+Active Directory authentication using LDAP lookup. Most the logic here in is the data access layer (AD-Authentication-Model.cs).
+
