@@ -1,0 +1,47 @@
+    <script>
+        $.ajax({
+            url: "/api/prMessagesProcessedByDay_Result/",
+            method: "GET",
+            success: function (data) {
+                console.log(data);
+                var myDate = [];
+                var myMessages = [];
+
+                for (var i in data) {
+                    myDate.push("Date" + data[i].Date);
+                    myMessages.push(data[i].MessagesProcessed);
+                }
+
+                var chartdata = {
+                    labels: myDate,
+                    datasets: [
+                        {
+                            label: 'Messages by Health Board',
+                            backgroundColor: [
+                            '#9900ff',
+                            '#333333',
+                            '#aaaaaa',
+                            '#5c0099',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'],
+                            borderColor: 'rgba(200, 200, 200, 0.75)',
+                            hoverBackgroundColor: 'rgba(200, 200, 200, 1)',
+                            hoverBorderColor: 'rgba(200, 200, 200, 1)',
+                            responsive: true,
+                            data: myMessages
+                        }
+                    ]
+                };
+
+                var ctx = $("#mycanvas");
+
+                var barGraph = new Chart(ctx, {
+                    type: 'pie',
+                    data: chartdata
+                });
+            },
+            error: function (data) {
+                console.log(data);
+            }
+        });
+    </script>
