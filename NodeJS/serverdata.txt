@@ -1,0 +1,2 @@
+This is stored text.
+This is the second line of the stored text.
