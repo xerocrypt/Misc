@@ -1,7 +1,3 @@
-
-
-
-
 var http = require("http");
 var fs = require("fs");
 var writedata = 'This is another new line written to the file';
