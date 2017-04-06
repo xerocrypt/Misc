@@ -1,0 +1,145 @@
+
+body {
+    background-image: url('../images/column.jpg');
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-position: left top;
+}
+
+h1 {
+    font-family: Arial;
+    color: #00cc66;
+        font-size: 2.6em;
+}
+
+h2 {
+    font-family: Arial;
+    color: #9200E7;
+    font-size: 2em;
+}
+
+a:link, a:visited {
+    background-color: #00cc66;
+    color: white;
+    padding: 5px 5px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: #66ffb3;
+    color: white;
+    padding: 5px 5px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+table {
+      padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+button {
+    background: #9200E7;
+    color: #FFFFFF;
+    border: 0px;
+}
+
+#tablesection {
+      font-family: Arial, Verdana;
+    font-size: 1em;
+    float: left;
+    margin: 0px;
+    width: 90%;
+    height: 90%;
+    border: 2px solid #9200E7;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+#banner {
+    font-family: 'MyWebFont';
+
+	background-color: #00cc66;
+        max-width: 100%;
+		max-height: 30%;
+
+	position: relative;
+    border: 0px solid #9200E7;
+    border-left-width: 0px;
+    top: 0px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 0px;
+    
+    padding-left: 0px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+button {
+    background: #9200E7;
+    color: #FFFFFF;
+    border: 0px;
+}
+
+code {
+  background-color: #EDEDED;
+  font-size: 0.8em;
+  display: block;
+  border: 1px solid #AAAAAA;
+  border-left-width: 10px;
+}
+
+#footer {
+        font-family: Arial, Verdana;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #00cc66;
+    width: 100%;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+apptitle {
+  font-family: Arial;
+  font-size: 2em;
+  color: #FFFFFF;
+}
+
+#mainoption {
+    float: right;
+	position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+optiontext
+{
+	font-family: Arial;
+  color: #FFFFFF;
+  right: 5px;
+  position: relative;
+}
+
