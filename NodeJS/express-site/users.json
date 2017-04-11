@@ -1,0 +1,23 @@
+{
+	"items": [
+	{
+		"firstName": "Michael",
+		"secondName": "Myname",
+		"userName": "michael",
+		"emailAddress": "michael@mail.com"
+    },
+	{
+		"firstName": "John",
+		"secondName": "Smith",
+		"userName": "john56",
+		"emailAddress": "john@example.com"
+    },
+	{
+		"firstName": "George",
+		"secondName": "Smiley",
+		"userName": "georgie34",
+		"emailAddress": "george@example.com"
+    }
+  ]
+}
+

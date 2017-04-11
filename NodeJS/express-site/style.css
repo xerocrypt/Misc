@@ -119,6 +119,17 @@ code {
   left: 0;
 }
 
+#show-data {
+        font-family: Arial, Verdana;
+    font-size: 1em;
+    color: #333333;
+    background-color: #ccffe6;
+    width: 50%;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 
 apptitle {
   font-family: Arial;
