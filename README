@@ -1,2 +1,11 @@
 ====== README ======
 Miscellaneous source files here. See other branches for specific projects.
+
+* AD-Authentication : Active Directory authentication code for MVC 5 with local Domain Controller.
+* NodeJS : Tutorials and example code, mainly for server-side data storage.
+* Simple-REST-Example : Windows Forms application that sends REST query to Twitter and displays the result.
+* Web-Services : Template code for a Web Service that follows SOLID design principles.
+* WebAPI : MVC 5 code for sending a Web API request and processing the JSON response.
+* JSON-Request.cshtml : MVC view containing JavaScript for calling a Web API and feeding the JSON response to a Chart.js function.
+* JSON-Request.html : HTML containing JavaScript for calling a Web API and feeding the JSON response to a Chart.js function.
+
