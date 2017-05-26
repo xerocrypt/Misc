@@ -1,0 +1,111 @@
+<html>
+
+  <head>
+    <script src="jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>DOM Events</title>
+  </head>
+
+  <body>
+
+    <table>
+      <tr>
+        <td>
+          <div id="calendar">
+            <h2>Start Date</h2>
+            <form>
+              Start Date:
+              <input type="date" id="startDate" name="startDate"></br>
+              <button type="button" onclick="showSelectedStartDate()">Add Date</button></br></br>
+            </form>
+          </div>
+        </td>
+
+        <td>
+          <div id="calendar">
+            <h2>End Date</h2>
+            <form>
+              End Date:
+              <input type="date" id="endDate" name="endDate"></br>
+              <button type="button" onclick="showSelectedEndDate()">Add Date</button></br></br>
+            </form>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div id="calendar">
+            <h2>Message Type</h2>
+            <form>
+              <select id="messageTypes" onchange="showSelectedMessageType()">
+                <option value="allMessages">All Messages</option>
+                <option value="pathology">Pathology</option>
+                <option value="radiology">Radiology</option>
+                <option value="cardiology">Cardiology</option>
+              </select>
+              <br><br>
+            </form>
+          </div>
+        </td>
+
+        <td>
+          <div id="calendar">
+            <h2>Health Board</h2>
+            <form>
+              <select id="healthBoards" onchange="showSelectedHB()">
+                <option value="allBoards">All Messages</option>
+                <option onclick="showSelectedMessageType" value="hboard1">HB 1</option>
+                <option value="hboard2">HB 2</option>
+                <option value="hboard3">HB3</option>
+              </select>
+            </form>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      function showSelectedStartDate()
+      {
+        var d = new Date(startDate.value);
+        document.getElementById("mystartdate").innerHTML = d;
+      }
+
+      function showSelectedEndDate()
+      {
+        var d = new Date(endDate.value);
+        document.getElementById("myenddate").innerHTML = d;
+      }
+
+      function showSelectedMessageType()
+      {
+        var x = document.getElementById("messageTypes");
+        var i = x.selectedIndex;
+        document.getElementById("mymessagetype").innerHTML = x.options[i].text;
+      }
+
+      function showSelectedHB()
+      {
+        var x = document.getElementById("healthBoards");
+        var i = x.selectedIndex;
+        document.getElementById("myhealthboard").innerHTML = x.options[i].text;
+      }
+    </script>
+
+    <div id="article">
+      START DATE: <p id="mystartdate"></p>
+    </div>
+    <div id="article">
+      END DATE: <p id="myenddate"></p>
+    </div>
+    <div id="article">
+      MESSAGE TYPE: <p id="mymessagetype"></p>
+    </div>
+    <div id="article">
+      HEALTH BOARD: <p id="myhealthboard"></p>
+    </div>
+
+  </body>
+</html>

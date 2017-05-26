@@ -1,0 +1,355 @@
+
+body {
+    background-image: url("images/divbg.png");
+    background-repeat: repeat;
+    background-color: #22222;
+    background-attachment: fixed;
+    background-position: left top;
+}
+
+h1 {
+    font-family: 'TitleFont';
+    color: #333333;
+        font-size: 2.6em;
+}
+
+h2 {
+    font-family: "Arial", "Verdana";
+    color: #6600cc;
+    font-size: 1.5em;
+}
+
+/* unvisited link */
+a:link {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color:  #00ff00;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color:  #00ff00;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color:  #00ff00;
+    text-decoration: none;
+}
+
+
+
+table {
+      padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+button {
+    background: #6600cc;
+    color: #FFFFFF;
+    border: 0px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#tablesection {
+      font-family: Arial, Verdana;
+    font-size: 1em;
+    float: left;
+    margin: 0px;
+    width: 90%;
+    height: 90%;
+    border: 2px solid #7a00cc;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#article {
+    font-family: "Arial", "Verdana";
+    font-size: 1em;
+    color: #000000;
+
+	   background-color: #FFFFFF;
+	    width: 50%;
+	     line-height: 25px;
+
+    border: 2px solid  #6600CC;
+    border-left-width: 15px;
+    top: 0px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#mystartdate {
+    font-family: "Courier New", "Verdana";
+    font-size: 1em;
+    color: #222222;
+
+	   background-color: #EEEEEE;
+	    width: 70%;
+	     line-height: 25px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#myenddate {
+    font-family: "Courier New", "Verdana";
+    font-size: 1em;
+    color: #222222;
+
+	   background-color: #EEEEEE;
+	    width: 70%;
+	     line-height: 25px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#mymessagetype {
+    font-family: "Courier New", "Verdana";
+    font-size: 1em;
+    color: #222222;
+
+	   background-color: #EEEEEE;
+	    width: 70%;
+	     line-height: 25px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#myhealthboard {
+    font-family: "Courier New", "Verdana";
+    font-size: 1em;
+    color: #222222;
+
+	   background-color: #EEEEEE;
+	    width: 70%;
+	     line-height: 25px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#calendar {
+    font-family: "Arial", "Verdana";
+    font-size: 1em;
+    color: #222222;
+
+    background-color: #DDDDDD;
+    width: 70%;
+    line-height: 25px;
+
+    border: 2px solid  #6600CC;
+    border-left-width: 15px;
+    top: 0px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#header {
+    font-family: Arial, Verdana;
+    font-size: 1em;
+    color:  #000000;
+    background-color:   #00ff55;
+    width: 100%;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+
+button {
+    background:  #6600cc;
+    color: #ffffff;
+    border: 0px;
+}
+
+code {
+  background-color: #222222;
+  color: #00ff55;
+	max-width: 100%;
+  font-size: 1em;
+  display: block;
+  border: 1px solid  #00ff55;;
+  border-left-width: 10px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    word-wrap: break-word;
+
+}
+
+#footer {
+        font-family: "Courier New";
+    font-size: 1em;
+    color:  #000000;
+    background-color:   #00ff55;
+    width: 100%;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.centerimage
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+#image {
+	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+	padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+blockquote {
+    font-style: Italic;
+    font-size: 1em;
+
+    background-color:  #dddddd;
+    margin: 0px;
+        width: 90%;
+
+    border: 2px solid #7a00cc;
+    top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tabstrip {
+  background-color: #FFFFFF;
+}
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
