@@ -33,11 +33,13 @@
         chart.dataProvider = firstChartData;
         chart.categoryField = "region";
         chart.startDuration = 1;
+        chart.mouseWheelZoomEnabled = true;
+
 
         // AXES
         // category
         var categoryAxis = chart.categoryAxis;
-        categoryAxis.labelRotation = 0;
+        categoryAxis.labelRotation = 45;
         categoryAxis.gridPosition = "start";
 
         // value
@@ -49,6 +51,7 @@
         graph.valueField = "messages";
         graph.balloonText = "[[category]]: <b>[[value]]</b>";
         graph.type = "column";
+        graph.rotate = "false";
         graph.lineAlpha = 0;
         graph.fillAlphas = 0.8;
         chart.addGraph(graph);
@@ -81,20 +84,25 @@
                         // title of the chart
                         chart.addTitle("Message Types", 16);
 
+
+
                         chart.dataProvider = chartData;
                         chart.titleField = "messagetype";
                         chart.valueField = "messages";
                         chart.sequencedAnimation = true;
                         chart.startEffect = "elastic";
                         chart.innerRadius = "80%";
+                        chart.pullOutOnlyOne = true;
                         chart.startDuration = 2;
                         chart.labelRadius = 15;
                         chart.balloonText = "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>";
                         // the following two lines makes the chart 3D
-                        chart.depth3D = 0;
-                        chart.angle = 0;
+                        chart.depth3D = 25;
+                        chart.angle = 50;
                         chart.legend = new AmCharts.AmLegend();
 
+	                      chart.alpha = 0.51;
+                        chart.outlineThickness = 0,
                         // WRITE
                         chart.write("chartdiv2");
                       });
@@ -182,6 +190,7 @@
             categoryAxis.parseDates = true; // as our data is date-based, we set parseDates to true
             categoryAxis.minPeriod = "DD"; // our data is daily, so we set minPeriod to DD
             categoryAxis.autoGridCount = false;
+            categoryAxis.Rotate = 45;
             categoryAxis.gridCount = 50;
             categoryAxis.gridAlpha = 0;
             categoryAxis.gridColor = "#000000";
@@ -238,7 +247,7 @@
 
             // CURSOR
             var chartCursor = new AmCharts.ChartCursor();
-            chartCursor.zoomable = false;
+            chartCursor.zoomable = true;
             chartCursor.categoryBalloonDateFormat = "YYYY MMM DD";
             chartCursor.cursorAlpha = 0;
             chart.addChartCursor(chartCursor);
