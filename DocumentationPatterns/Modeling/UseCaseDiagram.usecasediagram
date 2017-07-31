@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="d1c3fa18-1b05-46d0-8004-53bf469c5fed" name="UseCaseDiagram" linkedPackageId="2de8c189-0ad3-49f2-b817-a942cbb6c0cd" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="1f5c75b5-8ee6-4de7-bd67-4acafb8f7aa2">
+      <profileInstance Id="cc9c1388-fec7-4f2b-8530-caedf5a3054f" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5620f088-321e-4901-93c0-9650c8505420">
+      <profileInstance Id="d1d310b1-9cb8-4b8e-9323-05b826071b5b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="16547aab-7199-44c5-85fd-cdf0f243eaba" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3fc5d984-85f7-47de-b28a-b03541118677" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6ca5943b-8665-4ad9-a7db-a3bc87798a96" name="UseCase1" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="a088097c-6c2b-4d41-adb6-835eb9ea9a36" name="specification" profile="StandardProfileL2">
+            <elementDefinition Id="7d618349-3d06-41b0-9fe0-d5ec72261ba5" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="3f59f030-c7cc-4b6c-80b0-ffde64527242" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="2de8c189-0ad3-49f2-b817-a942cbb6c0cd" name="Modeling">
+    <elementDefinition Id="4674af01-c541-4484-b8fc-7302f9fade40" />
+  </package>
+</useCaseModelRoot>
