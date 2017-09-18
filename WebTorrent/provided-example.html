@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+		<h1>WebTorrent Demo</h1>
+		<h2>(BitTorrent over WebRTC)</h2>
+
+
+		<div class="torrentcontrols">
+			<form>
+				<label for="torrentId">Download from a magnet link: </label>
+				<input name="torrentId", width="60%", placeholder="magnet:" value="magnet:?xt=urn:btih:08ada5a7a6183aae1e09d831df6748d566095a10&dn=Sintel&tr=udp%3A%2F%2Fexplodie.org%3A6969&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.empire-js.us%3A1337&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=wss%3A%2F%2Ftracker.fastcast.nz&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&ws=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2F&xs=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2Fsintel.torrent">
+				<button type="submit">Download</button>
+			</form>
+
+			<button id="pauseTorrent">Pause</button>
+			<button id="stopTorrent">Stop</button>
+
+			<button id="startTorrentServer">Start Server</button>
+
+		</div>
+
+		<div class="mediacontainer"></div></br></br>
+
+
+<table width="100%">
+<tr>
+<td width="50%">
+		<div class="log">
+			<h2>Download Details</h2>
+		</div>
+</td>
+<td>
+<div class="instructions"></div>
+</td>
+</tr>
+</table>
+
+		<!-- Include the latest version of WebTorrent -->
+		<script src="https://cdn.jsdelivr.net/webtorrent/latest/webtorrent.min.js"></script>
+
+		<script>
+			var client = new WebTorrent()
+			var magnetURI = 'magnet:localhost'
+
+			client.on('error', function (err)
+			{
+				console.error('ERROR: ' + err.message)
+			})
+
+			document.querySelector('form').addEventListener('submit', function (e)
+			{
+				e.preventDefault() 
+				// Prevent page refresh
+
+				var torrentId = document.querySelector('form input[name=torrentId]').value
+				log('Adding ' + torrentId)
+				client.add(torrentId, onTorrent)
+			})
+
+			function onTorrent (torrent)
+			{
+				log('Fetched torrent metadata.')
+				log(
+					'Torrent info hash: ' + torrent.infoHash + ' ' +
+					'<a href="' + torrent.magnetURI + '" target="_blank">[Magnet URI]</a> ' +
+					'<a href="' + torrent.torrentFileBlobURL + '" target="_blank" download="' + torrent.name + '.torrent">[Download .torrent]</a>'
+				)
+
+				torrent.on('done', function ()
+				{
+					log('Progress: Completed.')
+					clearInterval(interval)
+				})
+
+				// Render all files into to the page
+				torrent.files.forEach(function (file)
+				{
+					file.appendTo('.mediacontainer')
+					file.getBlobURL(function (err, url)
+					{
+						if (err) return log(err.message)
+						log('Bytes received: ' + torrent.received)
+						log('Bytes sent: ' + torrent.uploaded)
+					})
+				})
+			}
+
+			client.add(magnetURI, function (torrent) {
+			// create HTTP server for this torrent
+			var server = torrent.createServer()
+			server.listen(43020) // start the server listening to a port
+
+			// visit http://localhost:<port>/ to see a list of files
+
+			// access individual files at http://localhost:<port>/<index> where index is the index
+			// in the torrent.files array
+
+			// later, cleanup...
+			server.close()
+			client.destroy()
+})
+
+
+			// Event handler for the pause button
+			document.getElementById("pauseTorrent").addEventListener("click", pauseServer);
+
+			// Event handler for the stop button
+			document.getElementById("stopTorrent").addEventListener("click", stopServer);
+
+
+
+			function log (str)
+			{
+				var p = document.createElement('p')
+				p.innerHTML = str
+				document.querySelector('.log').appendChild(p)
+			}
+
+			function pauseServer(torrent)
+			{
+				torrent.pause()
+				log('Discontinued adding peers.')
+			}
+
+			function stopServer(torrent)
+			{
+				client.destroy()
+				log('Client stopped.')
+			}
+
+    </script>
+
+  </body>
+</html>
