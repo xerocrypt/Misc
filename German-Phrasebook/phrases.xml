@@ -1,39 +1,167 @@
-{
-	"phrases":[
-		{"English": "Who are you?", "German": "Wer sind Sie?", "Category": "Introduction"},
-		{"English": "What are you called?", "German": "Wie heiBen Sie?", "Category": "Introduction"},
-		{"English": "What is your name?", "German": "Wie ist Ihr Name?", "Category": "Introduction"},
-		{"English": "I am...", "German": "Ich bin...", "Category": "Introduction"},
-		{"English": "I'm called...", "German": "Ich heiBe...", "Category": "Introduction"},
-		{"English": "My name is...", "German": "Mein Name ist...", "Category": "Introduction"},
-		{"English": "Where are you from?", "German": "Woher kommen Sie?", "Category": "Introduction"},
-		{"English": "I come from...", "German": "Ich komme aus...", "Category": "Introduction"},
-		{"English": "How old are you?",	"German": "Wie alt sind Sie?", "Category": "Introduction"},
-		{"English": "I am [years] old.", "German": "Ich bin [...] jahre alt.", "Category": "Introduction"},
-		{"English": "It gives me pleasure.", "German": "Es freut mich.", "Category": "Introduction"},
-		{"English": "Freut mich sehr.",	"German": "I'm very pleased.", "Category": "Introduction"},
+<?xml version="1.0" encoding="utf-8" ?>
 
-		{"English": "Isn't it?", "German": "Nicht wahr?", "Category": "Misc"},
-		{"English": "Pardon?", "German": "VerBeihung", "Category": "Misc"},
-		{"English": "True", "German": "Wahr", "Category": "Misc"},
-		{"English": "False", "German": "Falsch", "Category": "Misc"},
-		{"English": "Naturally", "German": "Naturlich", "Category": "Misc"},
-		{"English": "Before that...", "German": "Bevor das...", "Category": "Misc"},
+<Dictionary>
+	<Phrase>
+		<English>Who are you?</English>
+		<German>Wer sind Sie?</German>
+		<Category>Introduction</Category>
+	</Phrase>
+	<Phrase>
+		<English>What are you called?</English>
+		<German>Wie heiBen Sie?</German>
+		<Category>Introduction</Category>
+	</Phrase>
+	<Phrase>
+		<English>What is your name?</English>
+		<German>Wie ist Ihr Name?</German>
+		<Category>Introduction</Category>
+	</Phrase>
+	<Phrase>
+		<English>I am...</English>
+		<German>Ich bin...</German>
+		<Category>Introduction</Category>
+	</Phrase>
+	<Phrase>
+		<English>I'm called...</English>
+		<German>Ich heiBe...</German>
+		<Category>Introduction</Category>
+	</Phrase>
+	<Phrase>
+		<English>My name is...</English>
+		<German>Mein Name ist...</German>
+		<Category>Introduction</Category>
+	</Phrase>
+	<Phrase>
+		<English>How old are you?</English>
+		<German>Wie alt sind Sie?</German>
+		<Category>Introduction</Category>
+	</Phrase>
+	<Phrase>
+		<English>I am [years] old.</English>
+		<German>Ich bin [...] jahre alt.</German>
+		<Category>Introduction</Category>
+	</Phrase>
+	<Phrase>
+		<English>Where are you from?</English>
+		<German>Woher kommen Sie?</German>
+		<Category>Introduction</Category>
+	</Phrase>
+	<Phrase>
+		<English>I come from...</English>
+		<German>Ich komme aus...</German>
+		<Category>Introduction</Category>
+	</Phrase>
+	<Phrase>
+		<English>It gives me pleasure.</English>
+		<German>Es freut mich.</German>
+		<Category>Introduction</Category>
+	</Phrase>
+	<Phrase>
+		<English>I'm very pleased.</English>
+		<German>Freut mich mehr.</German>
+		<Category>Introduction</Category>
+	</Phrase>
 
 
-		{"English": "Twenty": "Twenty", "German": "Zwanzig", "Category": "Counting"},
-		{"English": "Twenty-One", "German": "Einundzwanzig", "Category": "Counting"},
-		{"English": "Twenty-Two", "German": "Zweiundzwanzig", "Category": "Counting"},
-		{"English": "Thirty", "German": "DreiBig", "Category": "Counting"},
-		{"English": "Forty", "German": "Vierzig", "Category": "Counting"},
+	<Phrase>
+		<English>Twenty</English>
+		<German>Zwanzig</German>
+		<Category>Counting</Category>
+	</Phrase>
+	<Phrase>
+		<English>Twenty-One</English>
+		<German>Einundzwanzig</German>
+		<Category>Counting</Category>
+	</Phrase>
+	<Phrase>
+		<English>Twenty-Two</English>
+		<German>Zweiundzwanzig</German>
+		<Category>Category</Category>
+	</Phrase>
+	<Phrase>
+		<English>Thirty</English>
+		<German>DreBig</German>
+		<Category>Counting</Category>
+	</Phrase>
+	<Phrase>
+		<English>Forty</English>
+		<German>Vierzig</German>
+		<Category>Counting</Category>
+	</Phrase>
 
-		{"English": "Where do you work?", "German": "Wo arbeiten Sie?", "Category": "Career"},
-		{"English": "What is your profession?", "German": "Was sind Sie von beruf?", "Category": "Career"},
-		{"English": "I work in...", "German": "Ich arbeite in...", "Category": "Career"},
-		{"English": "I used to be...", "German": "Ich war einmals...", "Category": "Career"},
-		{"English": "I work in an...", "German": "Ich arbeite in einem...", "Category": "Career"}
 
-		]
-}
+	<Phrase>
+		<English>Equally</English>
+		<German>Gleichmals</German>
+		<Category>Misc</Category>
+	</Phrase>
+	<Phrase>
+		<English>Same</English>
+		<German>Gleich</German>
+		<Category>Misc</Category>
+	</Phrase>
+
+
+	<Phrase>
+		<English>Isn't it?</English>
+		<German>Nicht wahr?</German>
+		<Category>Misc</Category>
+	</Phrase>
+	<Phrase>
+		<English>Pardon?</English>
+		<German>VerBeihung?</German>
+		<Category>Misc</Category>
+	</Phrase>
+	<Phrase>
+		<English>True</English>
+		<German>Wahr</German>
+		<Category>Misc</Category>
+	</Phrase>
+	<Phrase>
+		<English>False</English>
+		<German>Falsch</German>
+		<Category>Misc</Category>
+	</Phrase>
+	<Phrase>
+		<English>Naturally</English>
+		<German>Naturlich</German>
+		<Category>Misc</Category>
+	</Phrase>
+	<Phrase>
+		<English>Before that...</English>
+		<German>Bevor das...</German>
+		<Category>Misc</Category>
+	</Phrase>
+
+
+	<Phrase>
+		<English>Where do you work?</English>
+		<German>Wo arbeiten Sie?</German>
+		<Category>Career</Category>
+	</Phrase>
+	<Phrase>
+		<English>What is your profession?</English>
+		<German>Was sind Sie von beruf?</German>
+		<Category>Career</Category>
+	</Phrase>
+	<Phrase>
+		<English>I work in...</English>
+		<German>Ich arbeite in...</German>
+		<Category>Career</Category>
+	</Phrase>
+	<Phrase>
+		<English>I used to be...</English>
+		<German>Ich war einmals...</German>
+		<Category>Career</Category>
+	</Phrase>
+	<Phrase>
+		<English>I work in a/an...</English>
+		<German>Ich arbeite in einem...</German>
+		<Category></Category>
+	</Phrase>
+
+
+
+</Dictionary>
 
 
