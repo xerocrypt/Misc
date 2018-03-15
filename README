@@ -2,6 +2,9 @@
 Miscellaneous source files here. See other branches for specific projects.
 
 * AD-Authentication : Active Directory authentication code for MVC 5 with local Domain Controller.
+* Documentation-Patterns: Visual Studio documentation patterns go here
+* German-Phrasebook: Data files for the German language course
+* MVC Design Pattern: Expanded template for ASP.NET MVC 5 projects
 * NodeJS : Tutorials and example code, mainly for server-side data storage.
 * Simple-REST-Example : Windows Forms application that sends REST query to Twitter and displays the result.
 * Web-Services : Template code for a Web Service that follows SOLID design principles.
