@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <title>Kyoto Map</title>
+		<link rel="stylesheet" href="scripts/leaflet/leaflet.css">
+		<script src="scripts/leaflet/leaflet.js"></script>
+        <script src="scripts/jquery-3.3.1.min.js"></script>	   
+		<script language="javascript">
+		    var map;
+
+			function init()
+			{
+			    map = new L.Map('map');
+				L.tileLayer('maps/kyoto-atlas/kyoto/{z}/{x}/{y}.png', { maxZoom: 10 }).addTo(map);
+				// map view before we get the location
+				map.setView(new L.LatLng(34.98852, 135.764982), 10);
+
+                L.marker([35.017294, 135.755747]).addTo(map)
+                .bindPopup('<b>Aikido Mugenjuku</b></br> Aikido dojo.')
+                .closePopup();
+
+                L.marker([35.006617, 135.764082]).addTo(map)
+                .bindPopup('<b>Man in the Moon</b></br>A British-style pub.')
+                .closePopup();
+
+                L.marker([35.04388, 135.746037]).addTo(map)
+                .bindPopup('<b>Daitoku-Ji Temple</b></br>')
+                .closePopup();
+
+                L.marker([34.967169, 135.772437]).addTo(map)
+                .bindPopup('<b>Fushimi Inari Shrine</b></br>Definitely visit this place!')
+                .closePopup();
+
+                L.marker([35.026695, 135.79824]).addTo(map)
+                .bindPopup('Ginkaku-Ji Temple')
+                .closePopup();
+
+                L.marker([35.028016, 135.797306]).addTo(map)
+                .bindPopup('<b>Hachi Shrine</b></br>Near the start of the Philosophers Path')
+                .closePopup();
+
+                L.marker([35.016917, 135.782388]).addTo(map)
+                .bindPopup('<b>Heian Shrine</b></br>Another historic site.')
+                .closePopup();
+
+                L.marker([35.024018, 135.797247]).addTo(map)
+                .bindPopup('<b>Honen-in Temple</b></br>Historic site')
+                .closePopup();
+
+                L.marker([35.024036, 135.751998]).addTo(map)
+                .bindPopup('Horikawa-dori Canal')
+                .closePopup();
+
+                L.marker([34.99502, 135.784955]).addTo(map)
+                .bindPopup('<b>Kiyomizu-dera</b></br>Giant historical wooden structure. This is a well-known tourist attraction.')
+                .closePopup();
+
+                L.marker([35.015367, 135.795951]).addTo(map)
+                .bindPopup('Kumannyakuoji Temple')
+                .closePopup();
+
+                L.marker([35.017175, 135.780933]).addTo(map)
+                .bindPopup('<b>Kyoto Budo Center</b></br>Main martial arts centre in Kyoto')
+                .closePopup();
+
+                L.marker([35.008699, 135.767091]).addTo(map)
+                .bindPopup('<b>Market Square</b>')
+                .closePopup();
+
+                L.marker([34.985985, 135.741648]).addTo(map)
+                .bindPopup('<b>Kyoyo Railway Museum</b>')
+                .closePopup();
+
+                L.marker([34.984692, 135.757361]).addTo(map)
+                .bindPopup('<b>Man in the Moon Pub, Kyoto</b>')
+                .closePopup();
+
+                L.marker([35.005214, 135.775097 ]).addTo(map)
+                .bindPopup('Man in the Moon Pub, Gion')
+                .closePopup();
+
+                L.marker([35.008931, 135.768735]).addTo(map)
+                .bindPopup('<b>Musashi Sushi</b>')
+                .closePopup();
+
+                L.marker([35.014202, 135.74686]).addTo(map)
+                .bindPopup('<b>Nijo Castle</b></br>Historic Site')
+                .closePopup();
+
+                L.marker([35.001548, 135.758166]).addTo(map)
+                .bindPopup('<b>Ninja Dojo and Store</b>')
+                .closePopup();
+
+                L.marker([34.991678, 135.76623]).addTo(map)
+                .bindPopup('<b>Nintendo Building</b>')
+                .closePopup();
+
+                L.marker([35.00501, 135.762582]).addTo(map)
+                .bindPopup('<b>Nishiki Market</b>')
+                .closePopup();
+
+                L.marker([35.025131, 135.796186]).addTo(map)
+                .bindPopup('Philosophers Path')
+                .closePopup();
+
+
+                L.marker([35.009211, 135.772887]).addTo(map)
+                .bindPopup('<b>Pig and Whistle Pub</b></br>A British-style pub.')
+                .closePopup();
+
+                L.marker([34.986456, 135.759392]).addTo(map)
+                .bindPopup('<b>Porta Shopping Mall</b>')
+                .closePopup();
+
+                L.marker([35.008549, 135.742982]).addTo(map)
+                .bindPopup('<b>Sanjo-dori Market</b>')
+                .closePopup();
+
+                L.marker([35.038663, 135.771609]).addTo(map)
+                .bindPopup('<b>Shomigemu Shrine Entrance</b>')
+                .closePopup();
+
+                L.marker([34.960681, 135.651485 ]).addTo(map)
+                .bindPopup('<b>Shoji Temple</b>')
+                .closePopup();
+			}
+
+			function onLocationFound(e)
+			{
+				var radius = e.accuracy / 2;
+				var location = e.latlng
+				L.marker(location).addTo(map)
+				L.circle(location, radius).addTo(map);
+			}
+				
+			function onLocationError(e)
+			{
+			    alert(e.message);
+			}
+				
+			function getLocationLeaflet()
+			{
+				map.on('locationfound', onLocationFound);
+				map.on('locationerror', onLocationError);
+				map.locate({setView: true, maxZoom: 10});
+			}
+
+		</script>    
+	</head>
+			
+	<body onLoad="javascript:init();">
+	    <div id="map" style="height: 80%"></div>
+		<input type="button" value="Locate me!" onClick="javascript:getLocationLeaflet();">
+	</body>
+</html>
+					

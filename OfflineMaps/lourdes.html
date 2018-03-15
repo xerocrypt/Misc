@@ -1,0 +1,114 @@
+<html>
+        <head>
+            <title>Lourdes Map</title>
+            <link rel="stylesheet" href="scripts/leaflet/leaflet.css">
+            <script src="scripts/leaflet/leaflet.js"></script>
+            <script src="scripts/jquery-3.3.1.min.js"></script>	   
+            <script language="javascript">
+                var map;
+    
+                function init()
+                {
+                    map = new L.Map('map');
+                    L.tileLayer('maps/lourdes-atlas/lourdes/{z}/{x}/{y}.png', { maxZoom: 10 }).addTo(map);
+                    // map view before we get the location
+                    map.setView(new L.LatLng(43.096556, -0.045987), 10);
+    
+                    L.marker([43.096556, -0.045987]).addTo(map)
+                    .bindPopup('<b>Chateau Fort de Lourdes</b></br> Historical site.')
+                    .closePopup();
+    
+                    L.marker([43.097165, -0.057757]).addTo(map)
+                    .bindPopup('<b>Chemin de Croix (Entrance)</b>')
+                    .closePopup();
+    
+                    L.marker([43.611107, 1.453556]).addTo(map)
+                    .bindPopup('<b>Gare de Toulouse-Matabiau</b></br>Railway station.')
+                    .closePopup();
+    
+                    L.marker([43.097575, -0.058338]).addTo(map)
+                    .bindPopup('<b>Grotte de Massabielle</b></br>Definitely visit this place!')
+                    .closePopup();
+    
+                    L.marker([43.094539, -0.052552]).addTo(map)
+                    .bindPopup('Hotel St. Louis')
+                    .closePopup();
+    
+                    L.marker([43.112201, -0.035415]).addTo(map)
+                    .bindPopup('<b>Le Dubliner</b></br>Irish pub')
+                    .closePopup();
+    
+                    L.marker([43.18697, 0.003733]).addTo(map)
+                    .bindPopup('<b>Lourdes Airport</b>')
+                    .closePopup();
+    
+                    L.marker([43.084511, -0.030931]).addTo(map)
+                    .bindPopup('<b>Pic du Jer - Lourdes View</b>')
+                    .closePopup();
+    
+                    L.marker([43.07951, -0.031233]).addTo(map)
+                    .bindPopup('Pic du Jer, Summit')
+                    .closePopup();
+    
+                    L.marker([43.083667, -0.044257]).addTo(map)
+                    .bindPopup('Pic du Jer - Lower Station')
+                    .closePopup();
+    
+                    L.marker([43.080385, -0.032587]).addTo(map)
+                    .bindPopup('Pic du Jer - Upper Station')
+                    .closePopup();
+    
+                    L.marker([42.992847, -0.071612]).addTo(map)
+                    .bindPopup('<b>Pyrenees Tab Destination</b>')
+                    .closePopup();
+    
+                    L.marker([43.083675, -0.045831]).addTo(map)
+                    .bindPopup('<b>Pyreneess Tab Start</b>')
+                    .closePopup();
+    
+                    L.marker([43.097587, -0.056709]).addTo(map)
+                    .bindPopup('<b>Rosary Basilica</b>')
+                    .closePopup();
+    
+                    L.marker([43.089448, -0.056309]).addTo(map)
+                    .bindPopup('<b>St. Peter City</b>')
+                    .closePopup();
+    
+                    L.marker([43.097495, -0.0573]).addTo(map)
+                    .bindPopup('Sanctuaires Notre Dame de Lourdes')
+                    .closePopup();
+    
+                    L.marker([43.095076, -0.048549]).addTo(map)
+                    .bindPopup('<b>Munster Bar</b>')
+                    .closePopup();
+                }
+    
+                function onLocationFound(e)
+                {
+                    var radius = e.accuracy / 2;
+                    var location = e.latlng
+                    L.marker(location).addTo(map)
+                    L.circle(location, radius).addTo(map);
+                }
+                    
+                function onLocationError(e)
+                {
+                    alert(e.message);
+                }
+                    
+                function getLocationLeaflet()
+                {
+                    map.on('locationfound', onLocationFound);
+                    map.on('locationerror', onLocationError);
+                    map.locate({setView: true, maxZoom: 10});
+                }
+    
+            </script>    
+        </head>
+                
+        <body onLoad="javascript:init();">
+            <div id="map" style="height: 80%"></div>
+            <input type="button" value="Locate me!" onClick="javascript:getLocationLeaflet();">
+        </body>
+    </html>
+                        
