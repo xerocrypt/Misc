@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="openpgp.min.js"></script>
+        <title>jCrypt</title>
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+        <h1>jCrypt</h1>
+        This application encrypts and decrypts messages using OpenPGP.js.
+        <ul>
+            <li>To encrypt a message, enter the plaintext message and paste the recipient's public key.</li>
+            <li>To decrypt a message, paste the encrypted message and your private key.</li>
+        </ul>
+
+        <div class="row">
+        
+            <div class="col-sm-4">       
+                <div class="panel panel-default">
+                    <div class="panel-heading">Message</div>
+                    <div class="panel-body">
+                        <textarea name="firstname" value=""></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Public/Private Key</div>
+                    <div class="panel-body">
+                        <textarea name="lastname" value=""></textarea>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Private Key Password</div>
+                    <div class="panel-body">
+                        <input type="text" name="lastname" value="">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Private Key Password</div>
+                    <div class="panel-body">
+                        <input type="submit" value="Encrypt">
+                        <input type="submit" value="Decrypt">
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    
+    <footer>Michael. 2018</footer>
+
+    </body>
+</html>
