@@ -67,6 +67,9 @@ color murphy
 set background=dark
 syntax on
 
+" Key word completion colours
+ highlight Pmenu guibg=black guifg=green
+
 " Show line numbers to the left of the window
 set number
 
