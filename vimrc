@@ -67,6 +67,10 @@ color murphy
 set background=dark
 syntax on
 
+" Searches aren't case sensitive, but the user can define caps
+set ignorecase
+set smartcase
+
 " Key word completion colours
  highlight Pmenu guibg=black guifg=green
 
