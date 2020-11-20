@@ -1,0 +1,350 @@
+/* For styling the entire Joplin app (except the rendered Markdown, which is defined in `userstyle.css`) */
+
+.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6 {
+    line-height: 1.5em;
+    color: #80ff80;
+}
+
+input {
+    flex: 1 1 0%;
+    display: inline-block;
+    padding: 5px 8px 5px 0px;
+    min-height: 35px;
+    box-sizing: border-box;
+    font-weight: bold;
+    margin-left: 5px;
+    color: #80ff80 !important;
+    font-size: 18px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
+
+
+.kNDCeq {
+    box-sizing: border-box;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 12px;
+    background: #666666 !important;
+    border: 1px solid #80FF80;
+    transition: 0.1s;
+}
+
+.cMcCHy.list-item {
+    font-size: 13px;
+    text-decoration: none;
+    color: #FFFFFF !important;
+    cursor: default;
+    opacity: 1;
+    background-color: #666666;
+    white-space: nowrap;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    user-select: none;
+    height: 100%;
+}
+
+.list-item-container {
+	color: #80ff80 !important;
+}
+
+.eopHcM {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 26px;
+    min-height: 26px;
+    max-height: 26px;
+    width: 26px;
+    min-width: 26px;
+    max-width: 26px;
+    box-sizing: border-box;
+    border-radius: 0px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 12px;
+    padding: 0 4px;
+    justify-content: center;
+    opacity: 1;
+    user-select: none;
+    border: none;
+    background-color: #80ff80 !important;
+}
+
+.cm-s-material-darker.CodeMirror {
+    background-color: #212121;
+    color: #FFFFFF !important;
+    border: 1px solid #80ff80 !important;
+}
+
+
+.ieyLwb {
+    color: #FFFFFF !important;
+    padding-left: 8px;
+    opacity: 0.5;
+    user-select: none;
+}
+
+div, span, a {
+    font-family: Roboto;
+    color: #80ff80 !important;
+}
+
+#rendered-md > h1:first-child, #rendered-md > h2:first-child, #rendered-md > h3:first-child, #rendered-md > h4:first-child, #rendered-md > ul:first-child, #rendered-md > ol:first-child, #rendered-md > table:first-child, #rendered-md > blockquote:first-child, #rendered-md > img:first-child, #rendered-md > p:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    color: #80ff80;
+}
+
+
+.jHELdx {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 26px;
+    min-height: 26px;
+    max-height: 26px;
+    width: auto;
+    min-width: 100px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 12px;
+    padding: 0 8px;
+    justify-content: center;
+    opacity: 1;
+    user-select: none;
+    background: none;
+    border-color: #ffffff;
+    color: #000000 !important;
+    background-color: #80ff80 !important;
+}
+
+.jHELdx .sc-AxgMl {
+    color: #000000 !important;
+}
+
+.icon-sync:before {
+    content: "\e90b";
+    color: #000000;
+}
+
+.icon-note:before {
+    content: "\e90d";
+    color: #000000 !important;
+}
+
+.fa-check-square:before {
+    content: "\f14a";
+    color: #000000 !important;
+}
+
+.css-osd31o-control {
+    border: 1px solid #80ff80;
+}
+
+.css-tnixx8 {
+    border-radius: 0px;
+    color: #dddddd;
+    font-size: 85%;
+    overflow: hidden;
+    padding: 3px;
+    padding-left: 6px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-sizing: border-box;
+    font-family: Roboto;
+    color: #000000 !important;
+    background-color: #80ff80;
+}
+
+.css-28095l {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 0px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 4px;
+    padding-right: 4px;
+    box-sizing: border-box;
+    color: #000000 !important;
+    background-color: #80ff80;
+}
+
+
+.css-1hwfws3 {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 2px 8px;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid #80ff80;
+}
+
+.css-1wy0on6 {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    border: 1px solid #80ff80;
+}
+
+
+.kMzLKP {
+    box-sizing: border-box;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 28px;
+    background: #80ff80 !important;
+    transition: 0.1s;
+}
+
+
+button {
+    font-family: Ubuntu, Arial, sans-serif;
+    background-color: #80ff80 !important;
+    color: #000000 !important;
+}
+
+.sc-AxheI {
+    color: #000000 !important;
+}
+
+.sc-Axmtr {
+    color: #000000 !important;
+}
+
+.sc-AxgMl {
+    color: #000000 !important;    
+}
+
+.jSlfZO {
+    background-color: #80ff80 !important;
+}
+
+
+.jSlfZO > .eXWVnt {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000 !important;
+    white-space: nowrap;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    user-select: none;
+}
+
+
+.jSlfZO > .jAYtup {
+    font-size: 17px;
+    color: #000000 !important;
+    margin-right: 8px;
+}
+
+
+.bgtscv > .eXWVnt {
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF !important;
+    white-space: nowrap;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    user-select: none;
+}
+
+.bgtscv > .jAYtup {
+    font-size: 17px;
+    color: #FFFFFF !important;
+    margin-right: 8px;
+}
+
+.bgtscv > .sc-fznMnq > .jAYtup > .icon-sync {
+    font-size: 17px;
+    color: #FFFFFF !important;
+    margin-right: 8px;
+}
+
+.bgtscv > .sc-fznMnq > .jAYtup > .icon-note {
+    font-size: 17px;
+    color: #FFFFFF !important;
+    margin-right: 8px;
+}
+
+
+.nllIY {
+    border: none;
+    /* padding-right: 15px; */
+    /* padding-top: 4px; */
+    padding: 0px !important;
+    /* padding-bottom: 15px; */
+}
+
+.icon-search:before {
+    content: "\e909";
+    color: #000000 !important;
+}
+
+.tox .tox-tbtn, .tox .tox-tbtn svg, .tox .tox-dialog__header, .tox .tox-button--icon .tox-icon svg, .tox .tox-button.tox-button--icon .tox-icon svg, .tox textarea, .tox input, .tox .tox-label, .tox .tox-toolbar-label {
+    color: #000000 !important;
+    fill: #000000 !important;
+}
+
+.tox .tox-tbtn {
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+    min-height: 26px;
+    margin: 0;
+    border-radius: 0px;
+    color: #000000 !important;
+}
+
+.fa-markdown:before {
+    content: "\f60f";
+    color: #000000;
+}
+
+.tox .tox-tbtn {
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+    min-height: 26px;
+    margin: 0;
+    background-color: #333333 !important;
+}
